@@ -5,10 +5,112 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../css/style.css">
+<!--     <link rel="stylesheet" href="../css/style.css"> -->
+    <style>
+        *{
+    margin:0;
+    padding:0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1px;
+    font-weight: 200;
+}
+.outer-container{
+    background-image: url("https://source.unsplash.com/1600x900/?love,couple,red");
+    width:100%;
+    height: 100vh;
+    display: flex;
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+}
+
+.container{
+    /* border-radius: 15px; */
+    background: white;
+    width: 30%;
+    min-width: 280px;
+    height: 70vh;
+    display:flex;
+    flex-direction: column;
+    margin: auto;
+    opacity:0.9;
+}
+.header{
+    background: red;
+    height: 50px;
+    display: flex;
+    /* border-top-left-radius: 15px;
+    border-top-right-radius: 15px; */
+}
+.header h1{
+    font-size:large;
+    margin:auto;
+    font-weight: 600;
+    color:white;
+}
+.t-container{
+    margin: auto;
+    background: white;
+    height: 7vh;
+    width:80%;
+    display:flex;
+    min-width: 280px;
+}
+
+.name{
+    padding:2px;
+    margin:auto;
+    height: 5vh;
+    width:47%;
+    border:none;
+    border-width:2px;
+    border: 1px solid grey;
+    outline: none;
+    border-radius: 5px;
+}
+.percentage{
+    margin:auto;
+    color:white;
+}
+
+.submit{
+    margin:auto;
+    background: rgb(24, 173, 24);
+    height: 6vh;
+    width:45%;
+    color: white;
+    border: none;
+    font-size: medium;
+    font-weight: 500;
+    outline: none;
+}
+.submit:active
+{
+    background: rgb(30, 100 , 30);
+    outline: none;
+}
+.footer{
+    background: rgb(248, 220, 182);
+    display:flex;
+}
+.footer p{
+    margin:auto;
+    font-weight: 400;
+}
+.percentage{
+    color:red;
+    font-size: 120px;
+    font-weight: 700;
+}
+    </style>
 </head>
-<script src="js/myscript.js">
-    
+<script>
+    function calc() {
+    var lovedata = Math.random() * 100;
+    lovedata = Math.floor(lovedata);
+    document.getElementById('data').innerText = lovedata+"%";
+    // document.getElementById('data').innerText;
+    console.log("Reached here");
+}
 </script>
 
 </script>
